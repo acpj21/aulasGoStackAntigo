@@ -98,6 +98,8 @@ docker run --name mongobarber -p 27017:27017 -d -t mongo
 yarn add mongoose
 
 
+
+
 -->Rodar o Postgres do Docker, a cada reinicialização:
 docker start database
 -->Rodar o MongoDB do Docker, a cada reinicialização:
