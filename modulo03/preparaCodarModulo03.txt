@@ -117,4 +117,6 @@ docker start database
 docker start mongobarber
 -->Rodar o Redis do Docker, a cada reinicialização:
 docker start redisbarber
-
+-->Rodar os servidores de serviço
+yarn dev
+yarn queue
