@@ -104,8 +104,17 @@ yarn add nodemailer
 https://handlebarsjs.com/
 yarn add express-handlebars nodemailer-express-handlebars
 
+--> Instalando o Banco Redis (https://redis.io/)
+docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
+
+-->Instalar o Bee Queue, gerenciador de fila/tarefa performático
+https://github.com/bee-queue/bee-queue
+yarn add bee-queue
+
 -->Rodar o Postgres do Docker, a cada reinicialização:
 docker start database
 -->Rodar o MongoDB do Docker, a cada reinicialização:
 docker start mongobarber
+-->Rodar o Redis do Docker, a cada reinicialização:
+docker start redisbarber
 
