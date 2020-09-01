@@ -3,3 +3,4 @@ node_modules/
 src/config/database.js
 src/config/mail.js
 src/config/sentry.js
+.env
