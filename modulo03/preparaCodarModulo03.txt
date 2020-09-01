@@ -111,6 +111,15 @@ docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
 https://github.com/bee-queue/bee-queue
 yarn add bee-queue
 
+-->Instalação do Sentry (detecção de erros, que não usam o async await)
+https://sentry.io/welcome/
+yarn add @sentry/node
+//para usar com async await (extensão)
+yarn add express-async-errors
+//tratativas de mensagens de erro
+yarn add youch
+
+
 -->Rodar o Postgres do Docker, a cada reinicialização:
 docker start database
 -->Rodar o MongoDB do Docker, a cada reinicialização:
