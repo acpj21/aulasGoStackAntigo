@@ -2,3 +2,4 @@ preparaCodarModulo03.txt
 node_modules/
 src/config/database.js
 src/config/mail.js
+src/config/sentry.js

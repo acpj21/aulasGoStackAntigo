@@ -119,6 +119,8 @@ yarn add express-async-errors
 //tratativas de mensagens de erro
 yarn add youch
 
+-->Variaveis de Ambiente
+
 
 -->Rodar o Postgres do Docker, a cada reinicialização:
 docker start database
