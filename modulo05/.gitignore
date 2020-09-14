@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+#Arquivos de Observações do desenvolvedor
+preparaCodarModulo05.txt
+
 # dependencies
 /node_modules
 /.pnp
