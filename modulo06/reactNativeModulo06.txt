@@ -29,4 +29,14 @@ yarn add eslint -D
 yarn eslint --init
 yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
 
-cria arquivo .prettierrc
+cria arquivo eslintrc
+
+
+-->Configurando o Reactotron
+https://github.com/infinitered/reactotron
+instala o pacote deb
+yarn add reactotron-react-native
+
+pasta src->index.js
+
+dentro pasta src, pasta config->ReactotronConfig.js
