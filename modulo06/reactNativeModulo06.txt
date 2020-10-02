@@ -20,3 +20,13 @@ studio.sh
 //inicia o server
 react-native run-android
 react-native start
+
+-->ESLint, Prettirer & EditorConfig
+Editor config: Generate .EditorConfig
+deleta o .eslintrc.js
+
+yarn add eslint -D
+yarn eslint --init
+yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+
+cria arquivo .prettierrc
