@@ -1,0 +1,22 @@
+React Native:
+->Ambiente de Desenvolvimento:
+Tutorial instalação ambiente:
+https://react-native.rocketseat.dev/android/linux
+
+/home/acpj/desenv/Android/Sdk
+/usr/lib/jvm/java-8-openjdk-amd64
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export ANDROID_HOME=/home/acpj/desenv/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+-->Criando Projeto:
+npx react-native init modulo06 --version 1.0.0
+//inicia o emulador
+studio.sh
+//inicia o server
+react-native run-android
+react-native start
