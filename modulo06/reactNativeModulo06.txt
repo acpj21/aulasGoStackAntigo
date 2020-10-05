@@ -74,3 +74,6 @@ react-native run-android
 yarn add react-navigation-stack @react-native-community/masked-view react-native-safe-area-context
 
 -->Configurando o StatusBar
+
+-->Styled Components
+yarn add styled-components
