@@ -40,3 +40,36 @@ yarn add reactotron-react-native
 pasta src->index.js
 
 dentro pasta src, pasta config->ReactotronConfig.js
+
+->React Navigation
+dentro pasta src, pasta pages->subpasta Main -> index.js
+dentro pasta src, pasta pages->subpasta User -> index.js
+dentro pasta src, arquivo routes.js
+
+//url: reactnavigation.org
+yarn add react-navigation
+yarn add react-native-reanimated react-native-gesture-handler react-native-screens@^1.0.0-alpha.23
+
+atualizar o arquivo android/gradle/build.gradle:
+implementation 'android.appcompat:appcompat:1.1.0rc01'
+implementation 'andoidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
+
+atualizar o arquivo android/app/main/java/com/modulo06/MainActivity.java
+import com.facebook.react.ReactActivityDelegate;
+import com.facebook.react.ReactRootView;
+import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+
+@Override
+protected ReactActivityDelegate createReactActivityDelegate() {
+  return new ReactActivityDelegate(this, getMainComponentName()) {
+    @Override
+    protected ReactRootView createRootView() {
+      return new RNGestureHandlerEnabledRootView(MainActivity.this);
+    }
+  };
+}
+
+react-native run-android
+
+yarn add react-navigation-stack @react-native-community/masked-view react-native-safe-area-context
+
