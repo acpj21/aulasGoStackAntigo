@@ -77,3 +77,6 @@ yarn add react-navigation-stack @react-native-community/masked-view react-native
 
 -->Styled Components
 yarn add styled-components
+
+-->Estilizando formulário
+yarn add react-native-icons
