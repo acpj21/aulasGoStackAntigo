@@ -81,3 +81,6 @@ yarn add styled-components
 -->Estilizando formulário
 yarn add react-native-icons
 yarn add axios@^0.19.0
+
+--> Salvando no storage
+yarn add @react-native-community/async-storage
