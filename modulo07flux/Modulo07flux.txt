@@ -6,3 +6,7 @@ yarn add --exact react-dom@16.8.6
 yarn add eslit@^5.16.0 -D
 yarn eslint --init
 yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+
+-->Configurando Rotas
+criar rotas
+yarn add react-router-dom@^5.0.1
