@@ -10,3 +10,5 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
 -->Configurando Rotas
 criar rotas
 yarn add react-router-dom@^5.0.1
+//biblioteca de estylização
+yarn add styled-components@^4.3.2
