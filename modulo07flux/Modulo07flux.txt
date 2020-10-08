@@ -12,3 +12,7 @@ criar rotas
 yarn add react-router-dom@^5.0.1
 //biblioteca de estylização
 yarn add styled-components@^4.3.2
+
+
+-->Criando Header
+yarn add react-icons@^3.7.0
