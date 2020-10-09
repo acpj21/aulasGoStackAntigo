@@ -17,3 +17,5 @@ yarn add styled-components@^4.3.2
 -->Criando Header
 yarn add react-icons@^3.7.0
 yarn add polished@^3.4.1
+
+-->Estilização do Carrinho
