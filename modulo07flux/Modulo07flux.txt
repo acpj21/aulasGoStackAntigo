@@ -45,3 +45,6 @@ json-server server.json -p 3333
 yarn start
 
 -->Adicionando ao Carrinho
+
+-->Reactotron + Redux
+yarn add reactotron-react-js@^3.3.2 reactotron-redux@^3.1.1
