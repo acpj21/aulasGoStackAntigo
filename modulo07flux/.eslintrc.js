@@ -20,17 +20,18 @@ module.exports = {
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": [
-        "react",
-        "prettier"
+    plugins: [
+        'react',
+        'prettier'
     ],
-    "rules": {
-        "prettier/prettier": "error",
-        "react/jsx-filename-extension": [
-            "warn",
-            { extensions: [".jsx", ".js"]}
+    rules: {
+        'prettier/prettier': 'error',
+        'react/jsx-filename-extension': [
+            'warn',
+            { extensions: ['.jsx', '.js']}
         ],
-        "import/prefer-default-export": "off",
-        "no-console": ["error", { allow: ["tron"]}]   
+        'import/prefer-default-export': 'off',
+        'no-param-reassign': 'off',
+        'no-console': ['error', { allow: ["tron"]}]   
     }
 };
