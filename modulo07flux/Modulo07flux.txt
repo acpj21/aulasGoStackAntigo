@@ -19,3 +19,17 @@ yarn add react-icons@^3.7.0
 yarn add polished@^3.4.1
 
 -->Estilização do Carrinho
+
+-->Configurando a API
+biblioteca JSON SERVER
+https://github.com/typicode/json-server
+//instalar de forma global
+yarn global add json-server
+
+//axios
+yarn add axios@^0.19.0
+
+//para o servidor json-server funcionar
+json-server server.json -p 3333
+
+//acessar os produtos: localhost:3333/products
