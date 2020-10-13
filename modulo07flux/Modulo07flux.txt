@@ -36,3 +36,7 @@ json-server server.json -p 3333
 
 -->Buscando produtos da API
 classe Intl
+
+
+-->Configurando o Redux
+yarn add redux@^4.0.1 react-redux@^7.1.0
