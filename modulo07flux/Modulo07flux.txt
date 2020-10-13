@@ -37,6 +37,11 @@ json-server server.json -p 3333
 -->Buscando produtos da API
 classe Intl
 
-
 -->Configurando o Redux
 yarn add redux@^4.0.1 react-redux@^7.1.0
+
+//iniciando aplicação:
+json-server server.json -p 3333
+yarn start
+
+-->Adicionando ao Carrinho
