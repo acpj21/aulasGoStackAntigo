@@ -66,3 +66,6 @@ yarn add redux-saga@^1.0.5
 yarn add reactotron-redux-saga@^4.2.2
 
 -->Separando Actions
+
+-->React Toastify
+yarn add react-toastify@^5.3.1
