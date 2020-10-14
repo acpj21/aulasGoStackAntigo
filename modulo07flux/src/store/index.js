@@ -8,7 +8,7 @@ const sagaMonitor = process.env.NODE_ENV === 'development'
     ? console.tron.createSagaMonitor()
     : null;
 
-const createSagaMiddleware = createSagaMiddleware({
+const SagaMiddleware = createSagaMiddleware({
     sagaMonitor,
 });
 
@@ -16,12 +16,12 @@ const enhancer =
     process.env.NODE_ENV === 'development'
     ? compose(
         console.tron.createEnhancer(),
-        applyMiddleware(createSagaMiddleware)
+        applyMiddleware(SagaMiddleware)
         )
-    : applyMiddleware(createSagaMiddleware);
+    : applyMiddleware(SagaMiddleware);
 
 const store = createStore(rootReducer, enhancer);
 
-createSagaMiddleware.run(rootSaga);
+SagaMiddleware.run(rootSaga);
 
 export default store;
