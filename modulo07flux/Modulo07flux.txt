@@ -61,3 +61,6 @@ yarn add immer@^3.1.3
 
 --Configurando Redux Saga
 yarn add redux-saga@^1.0.5
+
+-->Reactotron + Saga
+yarn add reactotron-redux-saga@^4.2.2
