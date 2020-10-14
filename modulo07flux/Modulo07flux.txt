@@ -69,3 +69,6 @@ yarn add reactotron-redux-saga@^4.2.2
 
 -->React Toastify
 yarn add react-toastify@^5.3.1
+
+-->Navegando no Saga
+yarn add history@^4.9.0
