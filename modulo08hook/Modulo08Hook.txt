@@ -10,3 +10,5 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
 yarn add eslint-plugin-react-hooks -D
 
 -->Hook useState
+//verifucar o endereço:
+reactjs.org/docs/hooks-rules.html
