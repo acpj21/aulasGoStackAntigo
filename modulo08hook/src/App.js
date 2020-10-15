@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 
 function App() {
     const [tech, setTech] = useState([]);
     const [newTech, setNewTech] = useState('');
 
-    function handleAdd(){
+    const handleAdd = useCallback(() => {
         setTech([ ...tech, newTech]);
         setNewTech('');
-    }
+    }, [newTech, tech]);
 
     //simula um didmount
     useEffect(() => {
@@ -34,7 +34,7 @@ function App() {
                     <li key={t}> {t} </li>
                 ))}
             </ul>
-                <strong>Você tem {techSize} tecnologias. </strong>
+            <strong>Você tem {techSize} tecnologias. </strong>
             <input value={newTech} onChange={e => setNewTech(e.target.value)} />
             <button type="button" onClick={handleAdd}> Adicionar </button>
         </>
