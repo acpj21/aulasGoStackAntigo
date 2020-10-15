@@ -72,3 +72,7 @@ yarn add react-toastify@^5.3.1
 
 -->Navegando no Saga
 yarn add history@^4.9.0
+
+-->Modulo08: Convertendo classe
+yarn add eslint-plugin-react-hooks@^1.6.1 -D
+
