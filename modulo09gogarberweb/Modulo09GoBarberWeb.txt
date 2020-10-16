@@ -1,0 +1,10 @@
+Modulo09GoBarberWeb.txt
+GoBarberWeb
+-->Estrutura Configurada
+yarn create react-app modulo09gogarberweb
+yarn add --exact react-scripts@3.0.1
+yarn add --exact react@16.8.6
+yarn add --exact react-dom@16.8.6
+yarn add eslint@^5.16.0 -D
+yarn eslint --init
+yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
