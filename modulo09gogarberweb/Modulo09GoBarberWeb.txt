@@ -52,3 +52,6 @@ yarn add reactotron-react-js@^3.3.2
 docker start database
 docker start mongobarber
 docker start redisbarber
+
+-->Rotas Privadas
+yarn add prop-types@^15.7.2
