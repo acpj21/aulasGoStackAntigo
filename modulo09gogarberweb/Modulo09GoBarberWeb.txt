@@ -41,7 +41,9 @@ docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
 //outras aplicações acessem a nossa api
 yarn add cors@^2.8.5
 
-Ajustes na Api 3:14
+-->Configurando Rotas
+yarn add react-router-dom@^5.0.1
+yarn add history@^4.9.0
 
 //inicializar os bds (mongo, postgresql e redis)
 docker start database
