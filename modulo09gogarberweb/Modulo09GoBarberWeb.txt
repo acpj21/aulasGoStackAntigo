@@ -8,3 +8,42 @@ yarn add --exact react-dom@16.8.6
 yarn add eslint@^5.16.0 -D
 yarn eslint --init
 yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+
+-->Instalação do docker+postgres
+https://docs.docker.com/engine/install/ubuntu/
+postgres no docker: https://hub.docker.com/_/postgres
+docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+
+//listar todos os containers que estão rodando
+docker -ps
+
+//gui para postgres
+https://www.electronjs.org/apps/postbird
+usuario: postgres senha: docker
+
+//parar container
+docker stop database
+docker start database
+
+//visualizar erros
+docker logs database
+
+//configurando o mongodb
+docker run --name mongobarber -p 27017:27017 -d -t mongo
+
+//testar se o mongo está rodando: localhost:27017
+docker start mongo
+
+//configurando o redis, para trabalhos em segundo plano (background)
+docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
+
+//adiconando o cors no modulo03-modulo09
+//outras aplicações acessem a nossa api
+yarn add cors@^2.8.5
+
+Ajustes na Api 3:14
+
+//inicializar os bds (mongo, postgresql e redis)
+docker start database
+docker start mongobarber
+docker start redisbarber
