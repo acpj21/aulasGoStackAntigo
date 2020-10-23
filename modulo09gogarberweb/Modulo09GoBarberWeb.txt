@@ -45,6 +45,9 @@ yarn add cors@^2.8.5
 yarn add react-router-dom@^5.0.1
 yarn add history@^4.9.0
 
+-->Configurando o Reactotron
+yarn add reactotron-react-js@^3.3.2
+
 //inicializar os bds (mongo, postgresql e redis)
 docker start database
 docker start mongobarber
