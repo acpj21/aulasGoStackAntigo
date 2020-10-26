@@ -1,7 +1,7 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
   * {
     margin: 0;
@@ -10,7 +10,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  *:focus{
+  *:focus {
     outline: 0;
   }
 
@@ -27,11 +27,11 @@ export default createGlobalStyle`
   }
 
   a {
-    text=decoration: none;
+    text-decoration: none;
   }
 
   ul {
-    list-style: none
+    list-style: none;
   }
 
   button {
