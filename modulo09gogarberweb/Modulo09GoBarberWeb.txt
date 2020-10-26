@@ -70,3 +70,6 @@ yarn add polished@^3.4.1
 
 --> Utilizando o Unform
 yarn add @rocketseat/unform@^1.5.1
+
+-->Validações
+yarn add yup@^0.27.0
