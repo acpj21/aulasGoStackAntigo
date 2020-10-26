@@ -58,3 +58,5 @@ yarn add prop-types@^15.7.2
 
 -->Layouts por página
 yarn add styled-components@^4.3.2
+
+-->Estilos Globais
