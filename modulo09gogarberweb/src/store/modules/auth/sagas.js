@@ -23,6 +23,8 @@ export function* signIn({ payload }) {
       return;
     }
 
+    api.defaults.headers.Authorization = `Bearer ${token}`;
+
     yield put(signInSuccess(token, user));
 
     history.push('/dashboard');
@@ -44,14 +46,25 @@ export function* signUp({ payload }){
     });
 
     history.push('/');
-  } catch (err){
+  } catch (err) {
     toast.error('Falha no cadastro, verifique seus dados!');
 
     yield put(signFailure());
   }
 }
 
+export function setToken({ payload }){
+  if (!payload) return;
+
+  const { token } = payload.auth;
+
+  if (token){
+    api.defaults.headers.Authorization = `Bearer ${token}`;
+  }
+}
+
 export default all([
+  takenLatest('persist/REHYDRATE', setToken),
   takenLatest('@auth/SIGN_IN_REQUEST', signIn),
   takenLatest('@auth/SIGN_UP_REQUEST', signUp),
 ]);
