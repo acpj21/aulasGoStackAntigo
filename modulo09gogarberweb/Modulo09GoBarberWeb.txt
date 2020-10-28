@@ -82,3 +82,5 @@ yarn add axios@^0.19.0
 
 -->Persistindo Autenticação
 yarn add redux-persist@^5.10.0
+
+-->Loading de Autenticação
