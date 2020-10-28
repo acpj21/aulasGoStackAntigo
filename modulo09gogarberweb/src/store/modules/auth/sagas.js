@@ -32,4 +32,26 @@ export function* signIn({ payload }) {
   }
 }
 
-export default all([takenLatest('@auth/SIGN_IN_REQUEST', signIn)]);
+export function* signUp({ payload }){
+  try {
+    const { name, email, password } = payload;
+
+    yield call(api.post, 'users', {
+      name,
+      email,
+      password,
+      provider: true,
+    });
+
+    history.push('/');
+  } catch (err){
+    toast.error('Falha no cadastro, verifique seus dados!');
+
+    yield put(signFailure());
+  }
+}
+
+export default all([
+  takenLatest('@auth/SIGN_IN_REQUEST', signIn),
+  takenLatest('@auth/SIGN_UP_REQUEST', signUp),
+]);
