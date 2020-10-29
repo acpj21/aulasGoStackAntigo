@@ -7,7 +7,7 @@ import api from '~/services/api';
 import { signInSuccess, signFailure } from './actions';
 
 export function* signIn({ payload }) {
-  try{
+  try {
     const { email, password } = payload;
 
     const response = yield call(api.post, 'sessions', {
@@ -19,7 +19,6 @@ export function* signIn({ payload }) {
 
     if (!user.provider){
       toast.error('Usuário não é prestador');
-
       return;
     }
 
@@ -28,13 +27,13 @@ export function* signIn({ payload }) {
     yield put(signInSuccess(token, user));
 
     history.push('/dashboard');
-  } catch(err){
+  } catch (err) {
     toast.error('Falha na autenticação, verifique seus dados.');
     yield put(signFailure());
   }
 }
 
-export function* signUp({ payload }){
+export function* signUp({ payload }) {
   try {
     const { name, email, password } = payload;
 
@@ -53,12 +52,12 @@ export function* signUp({ payload }){
   }
 }
 
-export function setToken({ payload }){
+export function setToken({ payload }) {
   if (!payload) return;
 
   const { token } = payload.auth;
 
-  if (token){
+  if (token) {
     api.defaults.headers.Authorization = `Bearer ${token}`;
   }
 }

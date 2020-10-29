@@ -90,3 +90,7 @@ yarn add react-toastify@^5.3.1
 
 -->Configurando Header
 yarn add react-redux@^7.1.0
+
+-->Estilizando Notificações
+yarn add react-icons@^3.7.0
+yarn add react-perfect-scrollbar@^1.5.3
