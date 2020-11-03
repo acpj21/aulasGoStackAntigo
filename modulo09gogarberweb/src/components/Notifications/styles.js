@@ -24,7 +24,7 @@ export const Badge = styled.button`
         content: '';
         border-radius: 50%;
       }
-  `}
+    `}
 `;
 
 export const NotificationList = styled.div`
@@ -35,6 +35,7 @@ export const NotificationList = styled.div`
   background: rgba(0, 0, 0, 0.6);
   border-radius: 4px;
   padding: 15px 5px;
+  display: ${props => (props.visible ? 'block' : 'none')};
 
   &::before {
     content: '';
@@ -92,6 +93,7 @@ export const Notification = styled.div`
         height: 8px;
         background: #ff892e;
         border-radius: 50%;
+        margin-left: 10px;
       }
     `}
 `;

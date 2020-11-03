@@ -94,3 +94,6 @@ yarn add react-redux@^7.1.0
 -->Estilizando Notificações
 yarn add react-icons@^3.7.0
 yarn add react-perfect-scrollbar@^1.5.3
+
+-->Notificações
+yarn add date-fns@^2.0.0
