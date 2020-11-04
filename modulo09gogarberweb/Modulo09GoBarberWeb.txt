@@ -97,3 +97,6 @@ yarn add react-perfect-scrollbar@^1.5.3
 
 -->Notificações
 yarn add date-fns@^2.0.0
+
+
+-->Página de Perfil

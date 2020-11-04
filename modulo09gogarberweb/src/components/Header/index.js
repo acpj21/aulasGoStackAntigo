@@ -24,7 +24,7 @@ function Header() {
               <strong> Diego Fernandes </strong>
               <Link to="/profile">Meu perfil</Link>
             </div>
-            <img src="https://api.adorable.io/avatars/50/abott@adorable.png" alt="Diego Fernandes"/>
+              <img src="https://avatars.dicebear.com/api/human/lala.svg?mood[]=happy&mood[]=surprised" alt="Diego Fernandes"/>
           </Profile>
         </aside>
       </Content>
