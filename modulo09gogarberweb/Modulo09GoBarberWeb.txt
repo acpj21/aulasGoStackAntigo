@@ -104,3 +104,6 @@ yarn add date-fns@^2.0.0
 -->Dados do Header
 
 -->Estilização do DashBoard
+
+-->Listando Agendamentos
+yarn add date-fns-tz@^1.0.7
