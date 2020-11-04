@@ -12,12 +12,12 @@ export function* signIn({ payload }) {
 
     const response = yield call(api.post, 'sessions', {
       email,
-      password
+      password,
     });
 
     const { token, user } = response.data;
 
-    if (!user.provider){
+    if (!user.provider) {
       toast.error('Usuário não é prestador');
       return;
     }
@@ -28,7 +28,7 @@ export function* signIn({ payload }) {
 
     history.push('/dashboard');
   } catch (err) {
-    toast.error('Falha na autenticação, verifique seus dados.');
+    toast.error('Falha na autenticação, verifique seus dados');
     yield put(signFailure());
   }
 }
