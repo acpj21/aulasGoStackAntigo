@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   align-self: center;
-  margin-botton: 30px;
+  margin-bottom: 30px;
 
   label {
     cursor: pointer;
 
     &:hover {
-      opacitu: 0.7;
+      opacity: 0.7;
     }
 
     img {

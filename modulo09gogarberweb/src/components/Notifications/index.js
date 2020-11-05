@@ -10,7 +10,7 @@ import {
   Badge,
   NotificationList,
   Scroll,
-  Notification
+  Notification,
 } from './styles';
 
 export default function Notifications() {
@@ -18,18 +18,18 @@ export default function Notifications() {
   const [notifications, setNotifications] = useState([]);
 
   const hasUnread = useMemo(
-    () => !! notifications.find(notification => notification.read === false),
+    () => !!notifications.find(notification => notification.read === false),
     [notifications]
   );
 
   useEffect(() => {
-    async function loadNotifications(){
+    async function loadNotifications() {
       const response = await api.get('notifications');
 
       const data = response.data.map(notification => ({
         ...notification,
         timeDistance: formatDistance(
-          parseISO(notification.createAt),
+          parseISO(notification.createdAt),
           new Date(),
           { addSuffix: true, locale: pt }
         ),
@@ -45,7 +45,7 @@ export default function Notifications() {
     setVisible(!visible);
   }
 
-  async function handleMarkAsRead(id){
+  async function handleMarkAsRead(id) {
     await api.put(`notifications/${id}`);
 
     setNotifications(
@@ -65,10 +65,15 @@ export default function Notifications() {
         <Scroll>
           {notifications.map(notification => (
             <Notification key={notification._id} unread={!notification.read}>
-              <p> {notification.content} </p>
-              <time> {notification.timeDistance} </time>
-              { !notification.read && (
-                <button type="button" onClick={() => handleMarkAsRead(notification._id)}> Marcar como lida </button>
+              <p>{notification.content}</p>
+              <time>{notification.timeDistance}</time>
+              {!notification.read && (
+                <button
+                  type="button"
+                  onClick={() => handleMarkAsRead(notification._id)}
+                >
+                  Marcar como lida
+                </button>
               )}
             </Notification>
           ))}

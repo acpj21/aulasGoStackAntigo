@@ -21,7 +21,7 @@ const schema = Yup.object().shape({
 export default function SignUp() {
   const dispatch = useDispatch();
 
-  function handleSubmit({ name, email, password }){
+  function handleSubmit({ name, email, password }) {
     dispatch(signUpRequest(name, email, password));
   }
 
@@ -38,7 +38,7 @@ export default function SignUp() {
           placeholder="Sua senha secreta"
         />
 
-        <button type="submit"> Criar conta </button>
+        <button type="submit">Criar conta</button>
         <Link to="/">Já tenho login</Link>
       </Form>
     </>

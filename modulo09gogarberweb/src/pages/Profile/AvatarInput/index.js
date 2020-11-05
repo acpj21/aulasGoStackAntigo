@@ -13,12 +13,12 @@ export default function AvatarInput() {
   const ref = useRef();
 
   useEffect(() => {
-    if(ref.current) {
+    if (ref.current) {
       registerField({
         name: 'avatar_id',
         ref: ref.current,
         path: 'dataset.file',
-      })
+      });
     }
   }, [ref, registerField]);
 
@@ -38,7 +38,11 @@ export default function AvatarInput() {
   return (
     <Container>
       <label htmlFor="avatar">
-        <img src={preview || 'https://avatars.dicebear.com/api/human/lala.svg?mood[]=happy&mood[]=surprised' } alt=""/>
+        <img
+          src={preview || 'https://avatars.dicebear.com/api/human/lala.svg?mood[]=happy&mood[]=surprised'
+      }
+          alt=""
+        />
 
         <input
           type="file"

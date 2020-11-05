@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import api from '~/services/api';
 
-import { updateProfileSucess, updateProfileFailure } from './actions';
+import { updateProfileSuccess, updateProfileFailure } from './actions';
 
 export function* updateProfile({ payload }) {
   try {
@@ -11,20 +11,18 @@ export function* updateProfile({ payload }) {
 
     const profile = Object.assign(
       { name, email, avatar_id },
-      rest.ollPassword ? rest : {}
+      rest.oldPassword ? rest : {}
     );
 
     const response = yield call(api.put, 'users', profile);
 
     toast.success('Perfil atualizado com sucesso!');
 
-    yield put(updateProfileSucess(response.data));
+    yield put(updateProfileSuccess(response.data));
   } catch (err) {
-    toast.success('Erro ao atualizar perfil, confira seus dados!');
+    toast.error('Erro ao atualizar perfil, confira seus dados!');
     yield put(updateProfileFailure());
   }
 }
 
-export default all([
-  takeLatest('@user/UPDATE_PROFILE_REQUEST', updateProfile)
-]);
+export default all([takeLatest('@user/UPDATE_PROFILE_REQUEST', updateProfile)]);
