@@ -1,0 +1,136 @@
+mkdir modulo02
+cd modulo02
+yarn init -y
+yarn add express
+mkdir src
+cd src
+criar arquivos app.js
+criar arquivos server.js
+criar arquivos routes.js
+
+na raiz do projeto, criar arquivo nodemon.json
+yarn add eslint -D
+yarn eslint --init
+                -To check syntax, find problems, and enforce code style;
+                -JavaScript modules (import/export)
+                -None of these
+                -No
+                -Node
+                -Use a popular style guide
+                -Airbnb: https://github.com/airbnb/javascript
+                -JavaScript
+                -Yes
+                -->Deleta o package-lock.json
+                -Roda: yarn
+-No .eslintrc.js
+  rules: {
+    'class-methods-use-this': 'off',
+    'no-param-reassign': 'off',
+    camelcase: 'off',
+    'no-unused-vars': ['error', { argsIgnorePattern: 'next' }],
+  },
+
+  --> correção automática do código: src é uma pasta
+yarn eslint --fix src --ext .js
+
+--> criar arquivo .editor config
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+
+-->Instalar o sequelize
+yarn add sequelize
+yarn add sequelize-cli -D
+
+-criar arquivo .sequelizerc
+yarn add pg pg-hstore
+
+
+--criar as migrações
+yarn sequelize migration:create --name=create-users
+
+--rodar o docker
+docker start database
+
+--criar as tabelas
+yarn sequelize db:migrate
+
+--instalar o bcryptjs
+yarn add bcryptjs
+
+--jsonwebtoken
+yarn add jsonwebtoken
+
+--schema validation:
+yarn add yup
+
+-->Upload de arquivos (Multer)
+yarn add multer
+mkdir tmp (pasta raiz)
+/config/multer.js
+
+-->Tabela para guardar as imagens
+yarn sequelize migration:create --name=create-files
+
+-->Campo de referência das fotos na tabela users
+yarn sequelize migration:create --name=add-avatar-fiels-to-users
+
+-->Tabela de agendamentos
+yarn sequelize migration:create --name=create-appointments
+
+-->Rota para todos os prestadores de serviço
+
+-->Rota de agendamentos
+
+-->Biblioteca para tratamento de databas
+yarn add date-fns@next
+
+-->Instalação do MongoDB no docker
+docker run --name mongobarber -p 27017:27017 -d -t mongo
+
+-->Instalação do Mongoose, para o sistema acessar o MongoDB
+yarn add mongoose
+
+-->Bibliotecas de envio de e-mail
+yarn add nodemailer
+
+-->Templates engines, para e-mail
+https://handlebarsjs.com/
+yarn add express-handlebars nodemailer-express-handlebars
+
+--> Instalando o Banco Redis (https://redis.io/)
+docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
+
+-->Instalar o Bee Queue, gerenciador de fila/tarefa performático
+https://github.com/bee-queue/bee-queue
+yarn add bee-queue
+
+-->Instalação do Sentry (detecção de erros, que não usam o async await)
+https://sentry.io/welcome/
+yarn add @sentry/node
+//para usar com async await (extensão)
+yarn add express-async-errors
+//tratativas de mensagens de erro
+yarn add youch
+
+-->Variaveis de Ambiente
+criação do .env
+
+-->Carregar variáveis Ambiente
+yarn add dotenv
+
+-->Rodar o Postgres do Docker, a cada reinicialização:
+docker start database
+-->Rodar o MongoDB do Docker, a cada reinicialização:
+docker start mongobarber
+-->Rodar o Redis do Docker, a cada reinicialização:
+docker start redisbarber
+-->Rodar os servidores de serviço
+yarn dev
+yarn queue
