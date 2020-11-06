@@ -4,13 +4,13 @@ npx react-native init modulo10gobarbermobile --version 0.60.0
 -->Instalando o Eslint
 yarn add eslint@^6.0.1 -D
 yarn eslint --init
-*To check syntax, find problems, and enforce code style 
-*JavaScript modules (import/export) 
-*React 
+*To check syntax, find problems, and enforce code style
+*JavaScript modules (import/export)
+*React
 *Remove todas as opções
 *Use a popular style guide
-*Airbnb: https://github.com/airbnb/javascript 
-*JavaScript 
+*Airbnb: https://github.com/airbnb/javascript
+*JavaScript
 
 Remove o arquivo package-lock.json e roda o yarn
 yarn
@@ -18,3 +18,6 @@ yarn
 -->Instalando o prettier, eslint-config-prettier, eslint-plugin-prettier, babel-eslint
 yarn add prettier@^1.18.2 eslint-config-prettier@^6.0.0 eslint-plugin-prettier@^3.1.0 babel-eslint@^10.0.1 -D
 
+
+-->Configurando o Root import
+yarn add babel-plugin-root-import@^6.2.0 eslint-import-resolver-babel-plugin-root-import@^1.1.1 -D
