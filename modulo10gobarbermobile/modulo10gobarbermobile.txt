@@ -35,3 +35,5 @@ yarn add styled-components@^4.3.2
 -->Input & Button
 yarn add prop-types@^15.7.2
 yarn add react-native-vector-icons@^6.6.0
+
+-->Pagina SigIn
