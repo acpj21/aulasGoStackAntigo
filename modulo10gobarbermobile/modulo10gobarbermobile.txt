@@ -37,3 +37,7 @@ yarn add prop-types@^15.7.2
 yarn add react-native-vector-icons@^6.6.0
 
 -->Pagina SigIn
+
+-->Ractotron
+yarn add reactotron-react-native@^3.6.4 reactotron-redux@^3.1.1 reactotron-redux-saga@^4.2.2
+yarn add redux@^4.0.4 redux-saga@^1.0.5 react-redux@^7.1.0
