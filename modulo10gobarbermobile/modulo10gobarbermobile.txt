@@ -56,3 +56,5 @@ yarn add date-fns@^2.0.0
 -->Atualização de Perfil
 
 -->Logout
+
+-->Rotas de Agendamento
