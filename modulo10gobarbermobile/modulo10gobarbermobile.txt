@@ -54,3 +54,5 @@ yarn add react-navigation-tabs@^2.5.6
 yarn add date-fns@^2.0.0
 
 -->Atualização de Perfil
+
+-->Logout
