@@ -1,0 +1,12 @@
+-->Conceitos e testes
+Jest: framework testes Facebook
+Code Coverage:
+
+-->Configurando o Projeto
+yarn global add @rocketseat/omni@0.0.5
+omni init modulo11testesnodejs --only=server
+
+//iniciar os bancos do docker
+docker start database
+docker start mongobarber
+docker start redisbarber

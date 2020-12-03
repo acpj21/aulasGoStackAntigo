@@ -1,1 +1,7 @@
-preparacaoCodar.txt
+node_modules
+.env
+
+tmp/*
+!tmp/.gitkeep
+package.json
+yarn.lock
