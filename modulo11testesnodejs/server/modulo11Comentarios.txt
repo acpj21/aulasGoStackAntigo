@@ -1,0 +1,24 @@
+-->Conceitos e testes
+Jest: framework testes Facebook
+Code Coverage:
+
+-->Configurando o Projeto
+yarn global add @rocketseat/omni@0.0.5
+omni init modulo11testesnodejs --only=server
+
+//iniciar os bancos do docker
+docker start database
+docker start mongobarber
+docker start redisbarber
+
+-->configurando o Jest
+yarn add jest@^24.8.0 -D
+yarn jest --init
+    Would you like to use Jest when running "test" script in "package.json"? Y
+    Choose the test environment that will be used for testing Node
+    Do you want Jest to add coverage reports? Y
+    Automatically clear mock calls and instances between every test? Y
+
+https://www.npmjs.com/package/@sucrase/jest-plugin
+yarn add --dev @sucrase/@^2.0.0
+yarn add -D @types/jest@^24.0.15
