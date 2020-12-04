@@ -22,3 +22,5 @@ yarn jest --init
 https://www.npmjs.com/package/@sucrase/jest-plugin
 yarn add --dev @sucrase/@^2.0.0
 yarn add -D @types/jest@^24.0.15
+
+-->Variáveis de ambiente
