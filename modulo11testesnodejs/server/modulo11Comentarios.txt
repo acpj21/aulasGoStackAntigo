@@ -31,3 +31,6 @@ yarn ad sqlite3@^4.0.9 -D
 yarn add supertest@^4.0.2 -D
 
 -->E-mail Duplicado
+
+-->Cryptografia de Senha
+yarn add bcryptjs@^2.4.3
