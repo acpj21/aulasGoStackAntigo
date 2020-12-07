@@ -29,3 +29,5 @@ yarn add -D @types/jest@^24.0.15
 yarn sequelize migration:create --name=create-users
 yarn ad sqlite3@^4.0.9 -D
 yarn add supertest@^4.0.2 -D
+
+-->E-mail Duplicado
