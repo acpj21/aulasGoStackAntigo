@@ -24,3 +24,8 @@ yarn add --dev @sucrase/@^2.0.0
 yarn add -D @types/jest@^24.0.15
 
 -->Variáveis de ambiente
+
+-->Teste de criação do usuário
+yarn sequelize migration:create --name=create-users
+yarn ad sqlite3@^4.0.9 -D
+yarn add supertest@^4.0.2 -D
