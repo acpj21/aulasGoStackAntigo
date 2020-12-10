@@ -6,3 +6,8 @@ yarn add @testing-library/react@^8.0.6 @testing-library/jest-dom@^4.0.0 -D
 yarn add @types/jest@^24.0.15 -D
 
 -->Primeiro Teste
+
+->Testando o Formulário
+
+-->Mock do LocalStorage
+yarn add jest-localstorage-mock@^2.4.0 -D
