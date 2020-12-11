@@ -14,3 +14,5 @@ yarn add jest-localstorage-mock@^2.4.0 -D
 
 -->Mock do useSelector
 yarn add redux@^4.0.4 react-redux@^7.1.0
+
+-->Mock do useDispatch
