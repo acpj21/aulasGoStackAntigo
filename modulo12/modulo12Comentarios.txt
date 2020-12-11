@@ -16,3 +16,6 @@ yarn add jest-localstorage-mock@^2.4.0 -D
 yarn add redux@^4.0.4 react-redux@^7.1.0
 
 -->Mock do useDispatch
+
+-->Testando reducers
+yarn add immer@^1.12.1
