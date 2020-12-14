@@ -31,4 +31,14 @@ describe('Techlist component', () => {
 
         expect(dispatch).toHaveBeenCalledWith(addTech('Node.js'));
     });
+
+    it('should be able to add new tech 2', () => {
+        const { getByText, getByTestid } = render(<TechList />);
+
+        fireEvent.changeText(getByTestId('tech-input'), 'Node.js');
+        fireEvent.keyPress(getByText('Adiconar'));
+
+        expect(getByText('Node.js')).toBeTruthy();
+        expect(getByTestId('tech-input')).toHaveProp('value', '');
+    });
 }); 

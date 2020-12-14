@@ -28,3 +28,7 @@ yarn add axios@^0.19.0
 yarn add axios-mock-adapter@^1.17.0 -D
 
 -->Coverage report
+
+-->Tests no React Native
+yarn add @testing-library/react-native@^4.0.7 -D
+yarn add @testing-library/jest-native@^3.0.2 -D
